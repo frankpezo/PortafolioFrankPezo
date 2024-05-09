@@ -248,11 +248,11 @@ section .contenido1 .presentacion .info1:hover {
     border-radius: 10px;
 }
 
-.thumbnail .item.active {
+.seccion2 .thumbnail .item.active {
     filter: brightness(1.5);
 }
 
-.thumbnail .item .content {
+.seccion2 .thumbnail .item .content {
     position: absolute;
     inset: auto 10px 10px 10px;
 }

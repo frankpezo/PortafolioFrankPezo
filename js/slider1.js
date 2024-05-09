@@ -27,3 +27,16 @@ prev.onclick = function () {
     //4.2.1. Colocamos la función que hará el cambio
     showSlider();
 }
+
+//5. FUnción para mostrar el slider o cambio en él
+function showSlider() {
+    //5.1. Seleccionamos el active item
+    let itemActiveOld = document.querySelector('.seccion2 .list .item.active');
+    let thumbnailActiveOld = document.querySelector('.seccion2 .thumbnail .item.active');
+    //5.1.1. Eliminamos el active
+    itemActiveOld.classList.remove('active');
+    thumbnailActiveOld.classList.remove('active');
+    //5.2. Agregamos el nuevo item
+    items[itemActive].classList.add('active');
+    thumbnails[itemActive].classList.add('active');
+}
