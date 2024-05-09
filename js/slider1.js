@@ -1,3 +1,16 @@
+//Antes de empezar la lógica, aplicaremos esta función para el scrolled del nav
+window.addEventListener('scroll', function () {
+    var nav = document.querySelector('nav');
+    if (window.scrollY > 0) {
+        nav.classList.add('scrolled'); // Agrega la clase scrolled cuando haces scroll hacia abajo
+    } else {
+        nav.classList.remove('scrolled'); // Elimina la clase scrolled cuando vuelves arriba
+    }
+});
+
+
+
+
 //1. Seleccionamos los items del slider 
 let items = document.querySelectorAll('.seccion2 .slider .list .item');
 //2. Seleccioamos los botones
@@ -40,3 +53,4 @@ function showSlider() {
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
 }
+
