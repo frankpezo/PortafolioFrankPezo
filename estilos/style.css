@@ -101,3 +101,158 @@ section .contenido1 .presentacion .info1:hover {
     background-color: #1d2445;
     color: #eee;
 }
+
+
+/*Sección 2*/
+.seccion2 {
+    color: #eee;
+}
+
+.seccion2 .slider {
+    height: 100vh;
+    margin-top: -50px;
+    position: relative;
+}
+
+.seccion2 .slider .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    /*1. Colocamos para mostrarlo abajo*/
+    position: absolute;
+    transition: .5s;
+}
+
+.seccion2 .slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion2 .list .item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, #000 40%, transparent);
+}
+
+.seccion2 .slider .list .item .content {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+}
+
+.seccion2 .slider .list .item .content p:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.seccion2 .slider .list .item .content h2 {
+    font-size: 100px;
+    margin: 0;
+}
+
+/*1.1. Mostramos el contenido del active*/
+.seccion2 .slider .list .item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+/*Hacemos la transición*/
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.seccion2 .slider .list .item.active p:nth-child(1),
+.seccion2 .slider .list .item.active h2,
+.seccion2 .slider .list .item.active p:nth-child(3) {
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+
+.seccion2 .slider .list .item.active h1 {
+    animation-delay: 1s;
+}
+
+.seccion2 .slider .list .item.active p:nth-child(3) {
+    animation-duration: 1.3s;
+}
+
+/*Botones*/
+.seccion2 .arrows {
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+
+.seccion2 .arrows button {
+    background-color: #eee5;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+}
+
+.seccion2 .arrows button:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/*Miniaturas*/
+.seccion2 .thumbnail {
+    position: absolute;
+    bottom: 50px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: end;
+}
+
+.seccion2 .thumbnail::-webkit-scrollbar {
+    width: 0;
+}
+
+.seccion2 .thumbnail .item {
+    width: 150px;
+    height: 220px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+
+.seccion2 .thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thumbnail .item.active {
+    filter: brightness(1.5);
+}
+
+.thumbnail .item .content {
+    position: absolute;
+    inset: auto 10px 10px 10px;
+}
