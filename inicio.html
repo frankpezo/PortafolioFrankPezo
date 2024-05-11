@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <!-- link swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Portafolio Frank</title>
 </head>
 
@@ -133,14 +135,48 @@
     <section class="seccion3">
         <div class="info3">
             <h3>Mis proyectos</h3>
+            <!--Swiper container-->
+            <div class="swiper container">
+                <div class="slide-container">
+                    <div class="swiper-wrapper card-wrapper">
+                        <!-- slide 1-->
+                        <div class="swiper-slide card">
+                            <div class="image-box">
+                                <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="infoCard">
+                                <div class="infoDetail">
+                                    <h4 class="name">Proyecto 01</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta provident nihil
+                                        eius hic
+                                        laborum pariatur recusandae doloremque quam, quaerat quis magni maiores sed cum
+                                        iusto.
+                                        Et similique ipsam voluptatem impedit.</p>
+                                    <p class="mas"><a href="#">Ver más</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!----->
+                    </div>
+                </div>
+                <!-- Bonotones -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <!---->
+            </div>
+            <!---->
+
         </div>
     </section>
 
 
 
 
-
+    <!-- Script swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/slider1.js"></script>
+    <script src="js/slider2.js"></script>
 </body>
 
 </html>

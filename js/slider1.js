@@ -54,3 +54,4 @@ function showSlider() {
     thumbnails[itemActive].classList.add('active');
 }
 
+
