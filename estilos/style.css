@@ -297,7 +297,7 @@ section .contenido1 .presentacion .info1:hover {
 }
 
 .seccion3 .info3 .container .slide-container .card-wrapper .card {
-    background: #eee;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
 }
 
@@ -342,11 +342,32 @@ section .contenido1 .presentacion .info1:hover {
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
-    padding: 10px;
+    padding: 7px;
+    border: 2px solid #0077B6;
+    background-color: #0077B6;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.seccion3 .info3 .container .slide-container .card-wrapper .card .infoCard .infoDetail .mas:hover {
+    border: 2px solid #1d2445;
+    background-color: #1d2445;
+    color: #fff;
 }
 
 .seccion3 .info3 .container .slide-container .card-wrapper .card .infoCard .infoDetail .mas a {
     text-decoration: none;
-    font-weight: bold;
+
+    color: #fff;
+
+}
+
+.seccion3 .info3 .container .swiper-button-prev {
+    color: #0077B6
+}
+
+.seccion3 .info3 .container .swiper-button-next {
     color: #0077B6;
+
 }
