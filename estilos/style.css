@@ -432,6 +432,25 @@ section .contenido1 .presentacion .info1:hover {
 
 }
 
+/*Footer*/
+footer {
+    display: column;
+
+}
+
+footer ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+footer ul li:nth-child(1) {
+    font-size: 15px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
 
 
 /*Responsive*/
@@ -499,4 +518,6 @@ section .contenido1 .presentacion .info1:hover {
     .seccion2 .arrows {
         top: 10%;
     }
+
+
 }
