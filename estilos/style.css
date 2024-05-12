@@ -371,3 +371,19 @@ section .contenido1 .presentacion .info1:hover {
     color: #0077B6;
 
 }
+
+/*Responsive*/
+@media screen and (max-width:678px) {
+    .seccion2 .thumbnail {
+        justify-content: start;
+
+    }
+
+    .seccion2 .slider .list .item .content h2 {
+        font-size: 60px;
+    }
+
+    .seccion2 .arrows {
+        top: 10%;
+    }
+}
