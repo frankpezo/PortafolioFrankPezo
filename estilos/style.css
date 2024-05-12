@@ -23,6 +23,8 @@ header nav {
     z-index: 100;
 }
 
+
+
 /*Para poder hacer el scrolled*/
 header nav.scrolled {
     background-color: rgba(255, 255, 255, 0.9);
@@ -48,20 +50,78 @@ header nav .menu {
     font-weight: 500;
 }
 
-header nav .menu li.active {
-    color: #0077B6;
-    padding: 3px;
-    border-bottom: 3px solid #0077B6;
+/*Menú responsive*/
+header nav .sidebar {
+    position: fixed;
+    margin-top: 700px;
+    width: 100%;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    /*Para ocultar la barra de tareas del responsive*/
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
+}
+
+
+header nav .sidebar li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+header nav .sidebar a {
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+}
+
+
+
+header nav .sidebar a:hover {
+
+    color: #0077B6;
+    padding: 7px;
+    border-bottom: 3px solid #0077B6;
+}
+
+
+
+/*Normal*/
+header nav .menu li a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+header nav .menu a.active {
+    color: #0077B6;
+    padding: 7px;
+    border-bottom: 3px solid #0077B6;
 }
 
 /*Cambiar colores a las listas*/
-header nav .menu li:hover {
+header nav .menu li a:hover {
     color: #0077B6;
     padding: 3px;
     border-bottom: 3px solid #0077B6;
 
 }
+
+/*El icono de hamburguesa*/
+header nav .menu .menu-button {
+    display: none;
+}
+
 
 /*Sección 1*/
 section .contenido1 {
@@ -372,8 +432,61 @@ section .contenido1 .presentacion .info1:hover {
 
 }
 
+
+
 /*Responsive*/
 @media screen and (max-width:678px) {
+
+    /*Menú responsive*/
+    header nav .sidebar {
+        margin-top: 800px;
+        height: 100%;
+
+
+    }
+
+    header nav .sidebar li {
+        padding: 10px;
+    }
+
+    header nav .menu .hideOnMobile {
+        display: none;
+    }
+
+    header nav .menu .menu-button {
+        display: flex;
+    }
+
+
+    /*Sección 1*/
+    section .contenido1 {
+
+        justify-content: center;
+        gap: 20px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    section .contenido1 img {
+        display: none;
+    }
+
+    section .contenido1 .presentacion {
+        justify-content: center;
+        width: 200px;
+
+    }
+
+    section .contenido1 .presentacion h1 {
+        text-align: center;
+    }
+
+    section .contenido1 .presentacion p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    /*Seccion 2*/
     .seccion2 .thumbnail {
         justify-content: start;
 
