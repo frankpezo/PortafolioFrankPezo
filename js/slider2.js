@@ -1,9 +1,9 @@
 //1. Creamos un nuevo objeto Swipper que contendrá el slide-container
 var swiper = new Swiper(".slide-container", {
     //1.1. Agregamos la previluacización, es decir, cuántos card queremos ver
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     loop: true,
     centerSlider: "true",
     fade: "true",
