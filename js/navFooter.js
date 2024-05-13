@@ -1,3 +1,15 @@
+//Antes de empezar la lógica, aplicaremos esta función para el scrolled del nav
+window.addEventListener('scroll', function () {
+    var nav = document.querySelector('nav');
+    if (window.scrollY > 0) {
+        nav.classList.add('scrolled'); // Agrega la clase scrolled cuando haces scroll hacia abajo
+    } else {
+        nav.classList.remove('scrolled'); // Elimina la clase scrolled cuando vuelves arriba
+    }
+});
+
+
+
 //1. Seleccionamos el header y el footer
 const header = document.querySelector('header');
 const footer = document.querySelector('footer');
@@ -42,7 +54,6 @@ footer.innerHTML = `
 <li>Derechos reservados &copy; 2024 | Frank Pezo</li>
 </ul>
 `
-
 
 //3. Active page del menú normal 
 //3.1. cargamos la locación 

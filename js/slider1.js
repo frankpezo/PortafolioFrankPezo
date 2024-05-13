@@ -1,12 +1,3 @@
-//Antes de empezar la lógica, aplicaremos esta función para el scrolled del nav
-window.addEventListener('scroll', function () {
-    var nav = document.querySelector('nav');
-    if (window.scrollY > 0) {
-        nav.classList.add('scrolled'); // Agrega la clase scrolled cuando haces scroll hacia abajo
-    } else {
-        nav.classList.remove('scrolled'); // Elimina la clase scrolled cuando vuelves arriba
-    }
-});
 
 
 

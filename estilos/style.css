@@ -463,7 +463,7 @@ footer ul li:nth-child(1) {
 
 .seccionProyecto .containerP {
     padding: 15px 9px;
-    padding-bottom: 100px;
+    padding-top: 30px;
 }
 
 .seccionProyecto .containerP .headingP {
@@ -486,6 +486,7 @@ footer ul li:nth-child(1) {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     width: 300px;
+    margin-bottom: 50px;
 
 }
 
@@ -622,6 +623,16 @@ footer ul li:nth-child(1) {
 
     .seccion2 .arrows {
         top: 10%;
+    }
+
+    /*PAGE PROYECTOS*/
+    .seccionProyecto .containerP .headingP {
+        font-size: 25px;
+    }
+
+    .seccionProyecto .containerP .box-containerP .cardP {
+        margin-bottom: 20px;
+
     }
 
 
