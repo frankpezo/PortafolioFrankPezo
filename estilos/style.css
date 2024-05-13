@@ -599,12 +599,20 @@ section .contenido1 .presentacion .info1:hover {
     border-radius: 8px 8px 20px 20px;
 }
 
+.seccionDetalle .informacion {
+    padding: 50px;
+    width: 90%;
 
+}
 
+.seccionDetalle .informacion h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
 
-
-
-
+.seccionDetalle .informacion p {
+    text-align: justify;
+}
 
 
 .seccionDetalle .infoDetalle .container .swiper-button-prev {
@@ -616,6 +624,36 @@ section .contenido1 .presentacion .info1:hover {
 
 }
 
+/*Enlace código*/
+.github a img {
+    width: 35px;
+    height: 35px;
+}
+
+.github {
+    display: flex;
+    gap: 6px;
+    justify-content: right;
+}
+
+.github a {
+    text-decoration: none;
+    color: #0077B6;
+}
+
+.github a:hover {
+
+    color: #000;
+}
+
+.seccionDetalle .imgGif2 {
+    text-align: right;
+}
+
+.seccionDetalle .imgGif2 img {
+    height: 200px;
+
+}
 
 /*Footer*/
 footer {
@@ -730,5 +768,42 @@ footer ul li:nth-child(1) {
         display: none;
     }
 
+    /*Detalle del proyecto*/
+    .seccionDetalle .infoDetalle .container {
+
+        width: 100%;
+
+    }
+
+    .seccionDetalle .infoDetalle .container .slide-container .card-wrapper .card .image-box {
+        height: 250px;
+
+    }
+
+
+
+    .seccionDetalle .imgGif2 {
+        text-align: right;
+    }
+
+    .seccionDetalle .imgGif2 img {
+        height: 110px;
+
+    }
+
+    .seccionDetalle .informacion {
+        padding: 30px;
+
+
+    }
+
+    .seccionDetalle .informacion h2 {
+        font-size: 17px;
+
+    }
+
+    .seccionDetalle .informacion p {
+        font-size: 13px;
+    }
 
 }
