@@ -544,6 +544,79 @@ section .contenido1 .presentacion .info1:hover {
     margin-left: 1200px;
 }
 
+
+/*DETALLE DEL PROYECTO*/
+.back {
+    padding: 10px;
+    color: #000;
+}
+
+.back a {
+
+    text-decoration: none;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    gap: 3px;
+}
+
+.seccionDetalle .infoDetalle h3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 23px;
+}
+
+.seccionDetalle .infoDetalle .container {
+    max-width: 1500px;
+    width: 70%;
+    padding: 40px 0;
+}
+
+.seccionDetalle .infoDetalle .container .slide-container {
+    margin: 30px 50px;
+    overflow: hidden;
+}
+
+.seccionDetalle .infoDetalle .container .slide-container .card-wrapper .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+.seccionDetalle .infoDetalle .container .slide-container .card-wrapper .card:hover {
+    padding: 5px;
+}
+
+.seccionDetalle .infoDetalle .container .slide-container .card-wrapper .card .image-box {
+    height: 350px;
+    border-radius: 15px;
+    /*   width: 290px; */
+}
+
+.seccionDetalle .infoDetalle .container .slide-container .card-wrapper .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+.seccionDetalle .infoDetalle .container .swiper-button-prev {
+    color: #0077B6
+}
+
+.seccionDetalle .infoDetalle .container .swiper-button-next {
+    color: #0077B6;
+
+}
+
+
 /*Footer*/
 footer {
     display: column;
