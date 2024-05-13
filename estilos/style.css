@@ -455,6 +455,101 @@ footer ul li:nth-child(1) {
 }
 
 
+/*Mis proyectos*/
+.seccionProyecto {
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.seccionProyecto .containerP {
+    padding: 15px 9px;
+    padding-bottom: 100px;
+}
+
+.seccionProyecto .containerP .headingP {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #000;
+    font-size: 50px;
+}
+
+
+/*Card Presentación*/
+.seccionProyecto .containerP .box-containerP {
+    margin: 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    width: 300px;
+
+}
+
+.seccionProyecto .containerP .box-containerP .cardP:hover {
+    padding: 5px;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .image-boxP {
+    height: 250px;
+    /*   width: 290px; */
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .image-boxP img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 20px 20px;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .infoCardP {
+    padding: 15px;
+    column-gap: 12px;
+    align-items: center;
+    display: flex;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .infoCardP .nameP {
+    font-size: 17px;
+    font-weight: 500px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .infoCardP .infoDetailP p {
+    font-size: 12px;
+    font-weight: 400px;
+    color: #4d4d4d;
+    text-align: justify;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .infoCardP .infoDetailP .masP {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 7px;
+    border: 2px solid #0077B6;
+    background-color: #0077B6;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .infoCardP .infoDetailP .masP:hover {
+    border: 2px solid #1d2445;
+    background-color: #1d2445;
+    color: #fff;
+}
+
+.seccionProyecto .containerP .box-containerP .cardP .infoCardP .infoDetailP .masP a {
+    text-decoration: none;
+
+    color: #fff;
+
+}
 
 /*Responsive*/
 @media screen and (max-width:678px) {
