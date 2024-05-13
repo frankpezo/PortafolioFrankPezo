@@ -79,16 +79,19 @@ header nav .sidebar li {
 
 
 
-header nav .sidebar a {
+header nav .sidebar li a {
     text-decoration: none;
     width: 100%;
     color: #000;
 }
 
-
+header nav .sidebar li a.active {
+    color: #0077B6;
+    padding: 7px;
+    border-bottom: 3px solid #0077B6;
+}
 
 header nav .sidebar a:hover {
-
     color: #0077B6;
     padding: 7px;
     border-bottom: 3px solid #0077B6;
@@ -103,7 +106,7 @@ header nav .menu li a {
 
 }
 
-header nav .menu a.active {
+header nav .menu li a.active {
     color: #0077B6;
     padding: 7px;
     border-bottom: 3px solid #0077B6;
