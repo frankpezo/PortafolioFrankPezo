@@ -655,6 +655,82 @@ section .contenido1 .presentacion .info1:hover {
 
 }
 
+/*Sección Contacto*/
+
+.seccionContacto {
+    padding-top: 100px;
+    display: flex;
+    gap: 240px;
+    padding-bottom: 70px;
+}
+
+.seccionContacto img {
+    height: 480px;
+}
+
+.seccionContacto .contacto {
+    margin-left: 100px;
+    padding: 20px;
+    width: 500px;
+}
+
+
+.seccionContacto .contacto .info h1 {
+    font-size: 30px;
+}
+
+.seccionContacto .contacto .redes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+
+}
+
+.seccionContacto .contacto .redes .redesLink {
+    padding: 10px;
+}
+
+.seccionContacto .contacto .redes .redesLink {
+    display: flex;
+    gap: 12px;
+    text-align: center;
+}
+
+.seccionContacto .contacto .redes .redesLink img {
+    width: 55px;
+    height: 55px;
+    align-items: center;
+}
+
+.seccionContacto .contacto .redes .redesLink a {
+    text-decoration: none;
+    align-items: center;
+
+    font-weight: 500;
+    display: flex;
+    gap: 3px;
+}
+
+.seccionContacto .contacto .redes .redesLink .facebook {
+    color: #003860;
+}
+
+.seccionContacto .contacto .redes .redesLink .whatsapp {
+    color: #007F24;
+}
+
+.seccionContacto .contacto .redes .redesLink .linkedin {
+    color: #0E72CE;
+}
+
+.seccionContacto .contacto .redes .redesLink .githubS {
+    color: #000;
+}
+
+.seccionContacto .contacto .redes .redesLink .gmail {
+    color: #CE0E25;
+}
+
 /*Footer*/
 footer {
     display: column;
@@ -705,6 +781,7 @@ footer ul li:nth-child(1) {
     header nav .menu .menu-button {
         display: flex;
     }
+
 
 
 
@@ -805,5 +882,60 @@ footer ul li:nth-child(1) {
     .seccionDetalle .informacion p {
         font-size: 13px;
     }
+
+    /*Sección contacto*/
+
+    .seccionContacto {
+        display: column;
+        padding-top: 70px;
+        padding-bottom: 300px;
+        justify-content: center;
+    }
+
+    .seccionContacto .img-boxContact img {
+        display: none;
+    }
+
+    .seccionContacto .contacto {
+        margin-left: 200px;
+        padding: 10px;
+        width: 300px;
+    }
+
+    .seccionContacto .contacto .info {
+        width: 300px;
+    }
+
+    .seccionContacto .contacto .info h1 {
+        font-size: 22px;
+    }
+
+    .seccionContacto .contacto .redes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+
+    }
+
+    .seccionContacto .contacto .info p {
+        text-align: justify;
+        font-size: 17px;
+    }
+
+
+
+    .seccionContacto .contacto .redes .redesLink img {
+        width: 30px;
+        height: 30px;
+        align-items: center;
+    }
+
+    .seccionContacto .contacto .redes .redesLink a {
+        font-size: 14px;
+
+    }
+
+
+
 
 }
