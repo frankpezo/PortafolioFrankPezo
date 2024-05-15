@@ -731,6 +731,81 @@ section .contenido1 .presentacion .info1:hover {
     color: #CE0E25;
 }
 
+/*SECCIÓN SOBRE MÍ*/
+.seccionAbout {
+    padding-top: 140px;
+    margin-left: 180px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.seccionAbout .aboutContainer {
+    padding-right: 100px;
+}
+
+.seccionAbout .aboutContainer p {
+    text-align: justify;
+}
+
+.seccionAbout .aboutContainer a {
+    background-color: #0077B6;
+    padding: 10px;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 13px;
+}
+
+.seccionAbout .aboutContainer a:hover {
+    background-color: #000;
+}
+
+
+
+.seccionAbout .interesContainer .boxInteres {
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.seccionAbout .interesContainer .boxInteres .card {
+    background-color: #d4d4d4;
+    width: 80px;
+    height: 90px;
+    border-radius: 15px;
+
+}
+
+.seccionAbout .interesContainer .boxInteres .card:hover {
+    padding: 10px;
+}
+
+.seccionAbout .interesContainer .boxInteres .card .cardInfo {
+    display: block;
+    justify-content: center;
+    /* Para centrar horizontalmente */
+    align-items: center
+}
+
+.seccionAbout .interesContainer .boxInteres .card .cardInfo img {
+    width: 45px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 /*Footer*/
 footer {
     display: column;
@@ -935,7 +1010,60 @@ footer ul li:nth-child(1) {
 
     }
 
+    /*SECCIÓN SOBRE MÍ*/
+
+    .seccionAbout {
+        padding-top: 90px;
+        margin-left: 5px;
+        padding-bottom: 140px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 66px;
+    }
+
+    .seccionAbout .aboutContainer {
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+
+        padding: 40px;
+    }
+
+    .seccionAbout .aboutContainer p {
+        font-size: 14px;
+    }
 
 
+    .seccionAbout .interesContainer {
+
+        margin-left: 52px;
+    }
+
+    .seccionAbout .interesContainer h2 {
+        text-align: center;
+    }
+
+    .seccionAbout .interesContainer .boxInteres {
+
+        width: 330px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+
+    }
+
+    .seccionAbout .interesContainer .boxInteres .card {
+
+        width: 70px;
+        height: 80px;
+
+
+    }
+
+    .seccionAbout .interesContainer .boxInteres .card .cardInfo img {
+        width: 35px;
+        height: 35px;
+
+    }
 
 }
