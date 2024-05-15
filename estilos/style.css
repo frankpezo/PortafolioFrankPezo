@@ -150,6 +150,10 @@ section .contenido1 .presentacion h1 {
     text-align: center;
 }
 
+section .contenido1 .presentacion a {
+    text-decoration: none;
+}
+
 section .contenido1 .presentacion p {
     text-align: justify;
     font-size: 18px;
@@ -734,6 +738,7 @@ section .contenido1 .presentacion .info1:hover {
 /*SECCIÓN SOBRE MÍ*/
 .seccionAbout {
     padding-top: 140px;
+    padding-bottom: 140px;
     margin-left: 180px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
