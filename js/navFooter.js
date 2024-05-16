@@ -26,7 +26,7 @@ header.innerHTML = `
                 <path
                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg></a></li>
-    <li><a class="active" href="inicio.html" >Inicio</a></li>
+    <li><a class="active" href="index.html" >Inicio</a></li>
     <li><a href="proyectos.html">Proyectos</a></li>
     <li><a href="sobreMi.html">Sobre mí</a></li>
     <li><a href="contacto.html">Contacto</a></li>
@@ -36,7 +36,7 @@ header.innerHTML = `
 
 <!-- Menú normal-->
 <ul class="menu">
-    <li class="hideOnMobile "><a class="active" href="inicio.html">Inicio</a></li>
+    <li class="hideOnMobile "><a class="active" href="index.html">Inicio</a></li>
     <li class="hideOnMobile"><a href="proyectos.html">Proyectos</a></li>
     <li class="hideOnMobile"><a href="sobreMi.html">Sobre mí</a></li>
     <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
