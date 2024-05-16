@@ -235,7 +235,7 @@ section .contenido1 .presentacion .info1:hover {
 }
 
 .seccion2 .slider .list .item .content h2 {
-    font-size: 100px;
+    font-size: 80px;
     margin: 0;
 }
 
@@ -269,6 +269,11 @@ section .contenido1 .presentacion .info1:hover {
 
 .seccion2 .slider .list .item.active p:nth-child(3) {
     animation-duration: 1.3s;
+}
+
+.seccion2 .slider .list .item.active p {
+    text-align: justify;
+    font-size: 14px;
 }
 
 /*Botones*/
@@ -366,6 +371,7 @@ section .contenido1 .presentacion .info1:hover {
 .seccion3 .info3 .container .slide-container .card-wrapper .card {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
+    height: 600px;
 }
 
 .seccion3 .info3 .container .slide-container .card-wrapper .card:hover {
@@ -373,7 +379,7 @@ section .contenido1 .presentacion .info1:hover {
 }
 
 .seccion3 .info3 .container .slide-container .card-wrapper .card .image-box {
-    height: 250px;
+    height: 350px;
     /*   width: 290px; */
 }
 
@@ -470,6 +476,7 @@ section .contenido1 .presentacion .info1:hover {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     width: 300px;
+
     margin-bottom: 50px;
 
 }
